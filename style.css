@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 11, 15, 1)), url(headerbackground.png);
+    min-height: 900px;
+    background-size:
+    150% 150%,
+    140% auto;
+background-position:
+    center,
+    center 1%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(5, 15, 30, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+}
+
+.logo {
+    width: 92px;
+    height: 33px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 120px;
+    transform: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(255, 248, 234, 1);
+}
+
+nav a:nth-child(1) {
+    color: rgba(255, 182, 40, 1);
+}
+
+.search-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.search-child input {
+    width: 260px;
+    padding: 11px 45px 11px 15px;
+    border-radius: 26px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.search-child input::placeholder {
+    color: white;
+}
+
+.searchicon {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+    background-color: #ffb628;
+    border-radius: 50%;
+}
+
+.search-child a img {
+    width: 19px;
+    height: 19px;
+    position: static;
+}
+
+.getstarted {
+    margin-left: auto;
+    padding: 10px 22px;
+    background-color: #ffb628;
+    border-radius: 22px;
+}
+
+.getstarted a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.sonic-intro {
+    position: absolute;
+    z-index: 5;
+    bottom: 50%;
+}
+
+.sonic-intro h2 {
+font-weight: 600;
+font-size: 64px;
+color: #FFFFFF;
+margin-left: 100px;
+}
+
+.sonic-intro p {
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+color: #FFFFFF;
+margin-left: 100px;
+line-height: 24px;
+width: 70%;
+}
