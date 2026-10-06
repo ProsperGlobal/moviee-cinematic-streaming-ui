@@ -15,8 +15,8 @@ body {
 }
 
 header {
-    background-image: linear-gradient(  
-    rgba(0, 0, 0, 0), rgba(1, 11, 15, 1)),
+    background-image: linear-gradient(180deg,
+    rgba(0, 0, 0, 0) -100%, #0b0b0f 90%),
       url(headerbackground.png);
     min-height: 900px;
     background-size:
@@ -203,7 +203,6 @@ transform: translateY(5px);
     overflow: hidden;
 }
 
-
 .movie-catalogue img {
     width: 145px;
     height: 160px;
@@ -288,12 +287,280 @@ transform: translateY(5px);
     }
 }
 
+
+
 .genres-parent {
     background-color: #0B0B0F;
-    min-height: 300px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.genres-container {
+display: flex;
+gap: 20px;
+width: 100%;
+flex-wrap: nowrap;
+padding-top: 50px;
+padding-left: 70px;
+height: 360px;
+position: relative;
+}
+
+.genres-subcontainer {
+position: relative;
 }
 
 .genres-child {
+    width: 396px;
+    height: 308px;
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    overflow: hidden;
+
+   object-fit: contain;
+}
+
+.genre1 {
+       transition-timing-function: ease-in-out 4s;
 
 }
 
+.genres-subcontainer .genre1:hover {
+        transform:  scaleY(1.05);
+ ;
+}
+
+
+.genres-subcontainer,
+.genres-subcontainer2,
+.genres-subcontainer3,
+.genres-subcontainer4 {
+    position: relative;
+    width: 396px;
+    min-width: 396px;
+    flex-shrink: 0;
+    height: 308px;
+    transform-origin: center;
+    
+  animation: cards 12s ease-in-out infinite;
+}
+
+
+@keyframes cards {
+    0%, 4% {
+transform: translate(0) scale(1);
+    }
+
+    25% {
+transform: translateX(-419px) scale(1);
+
+    }
+
+    50% {
+transform: translateX(-838px) scale(1);
+    }
+
+    75% {
+    transform: translateX(-1257px) scale(1);
+    }
+
+
+   100% {
+transform: translateX(-2514px) scale(1.05);
+    }
+} 
+
+
+.genres-subcontainer {
+    animation-delay: 0s;
+}
+
+.genres-subcontainer2 {
+    animation-delay: -12s;
+}
+
+.genres-subcontainer3 {
+    animation-delay: -12s;
+}
+
+.genres-subcontainer4 {
+    animation-delay: -12s;
+} 
+
+
+.genres-subcontainer span {
+font-weight: 500;
+font-style: Medium;
+font-size: 32px;
+color: #FFF8EA;
+position: absolute;
+margin-top: 15px;
+left: 5.5%;
+}
+
+.genre1:nth-child(3) {
+    width: 194px;
+    height: 212.14px;
+    position: absolute;
+}
+
+.genre1:nth-child(1) {
+position: absolute;
+bottom: 1%;
+left: 10%;
+}
+
+.genre1:nth-child(2) {
+position: absolute;
+bottom: 1%;
+left: 32%;
+z-index: 3;
+}
+
+.genre1:nth-child(3) {
+position: absolute;
+bottom: 7%;
+right: 14%;
+} 
+
+.genres-subcontainer2 {
+position: relative;
+
+}
+
+.genres-child2 {
+    width: 396px;
+    height: 308px;
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    overflow: hidden;
+   object-fit: contain;
+}
+
+.genres-subcontainer2 span {
+font-weight: 500;
+font-style: Medium;
+font-size: 32px;
+color: #FFF8EA;
+position: absolute;
+margin-top: 15px;
+left: 5.5%;
+}
+
+.genre2:nth-child(1) {
+position: absolute;
+bottom: 1%;
+left: 10%;
+}
+
+.genre2:nth-child(2) {
+position: absolute;
+bottom: 1%;
+left: 32%;
+z-index: 3;
+
+}
+
+.genre2:nth-child(3) {
+position: absolute;
+bottom: 7%;
+right: 19%;
+width: 164px;
+height: 212.14px;
+} 
+
+.genres-subcontainer3 {
+position: relative;
+
+}
+
+.genres-child3 {
+    width: 396px;
+    height: 308px;
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    overflow: hidden;
+   object-fit: contain;
+}
+
+.genres-subcontainer3 span {
+font-weight: 500;
+font-style: Medium;
+font-size: 32px;
+color: #FFF8EA;
+position: absolute;
+margin-top: 15px;
+left: 5.5%;
+}
+
+.genre3:nth-child(1) {
+position: absolute;
+bottom: 1%;
+left: 10%;
+}
+
+.genre3:nth-child(2) {
+position: absolute;
+bottom: 1%;
+left: 32%;
+z-index: 3;
+
+}
+
+.genre3:nth-child(3) {
+position: absolute;
+bottom: 7%;
+right: 19%;
+width: 164px;
+height: 212.14px;
+} 
+
+.genres-subcontainer4 {
+position: relative;
+
+}
+
+.genres-child4 {
+    width: 396px;
+    height: 308px;
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    overflow: hidden;
+   object-fit: contain;
+}
+
+.genres-subcontainer4 span {
+font-weight: 500;
+font-style: Medium;
+font-size: 32px;
+color: #FFF8EA;
+position: absolute;
+margin-top: 15px;
+left: 5.5%;
+}
+
+.genre4:nth-child(1) {
+position: absolute;
+bottom: 1%;
+left: 10%;
+transform: rotate(-31deg);
+}
+
+.genre4:nth-child(2) {
+position: absolute;
+bottom: 1%;
+left: 32%;
+z-index: 3;
+transform: rotateX(0.96deg);
+}
+
+.genre4:nth-child(3) {
+position: absolute;
+bottom: 7%;
+right: 19%;
+width: 164px;
+height: 172.14px;
+transform: rotate(31.2deg);
+} 
+
+.new-release 

@@ -1,0 +1,73 @@
+/* div {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    /* transition: width 4s, height 6s, background-color 4s, transform 10s; */
+
+/* div:hover {
+    width: 700px;
+background-color: brown;
+height: 100px;
+}  */
+
+.box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.fmf {
+transition-timing-function: linear;
+}
+
+.fmf:hover {
+    width: 300px;
+    height: 290px;
+    
+}
+
+
+#fmf:nth-child(1) {
+width: 200px;
+height: 200px;
+background-color: blue;
+transition: ease;
+}
+
+.fmf:nth-child(2) {
+width: 200px;
+height: 200px;
+background-color: pink;
+transition: ease-in;
+    
+}
+
+.fmf:nth-child(3) {
+width: 200px;
+height: 200px;
+background-color: red;
+transition: ease-in-out;
+
+}
+
+.fmf:nth-child(4) {
+width: 200px;
+height: 200px;
+background-color: aqua;
+transition: ease-out;
+
+}
+
+.fmf:nth-child(5) {
+width: 200px;
+height: 200px;
+background-color: blue;
+transition: linear;
+}
+
+.fmf:nth-child(6) {
+width: 200px;
+height: 200px;
+background-color: green;
+transition: linear;
+}
