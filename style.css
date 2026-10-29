@@ -1128,3 +1128,963 @@ footer > p {
 }
 
 
+
+
+@media (min-width: 1920px) {
+
+    header {
+        min-height: 1000px;
+        background-size: 150% 150%, 100% auto;
+        background-position: center, center top;
+    }
+
+    .nav-container {
+        padding: 22px 100px;
+    }
+
+    .logo {
+        width: 110px;
+        height: auto;
+    }
+
+    nav {
+        margin-left: 150px;
+        gap: 40px;
+    }
+
+    nav a {
+        font-size: 19px;
+    }
+
+    .search-child {
+        margin-left: 60px;
+    }
+
+    .search-child input {
+        width: 320px;
+        padding: 14px 45px 14px 20px;
+    }
+
+    .getstarted {
+        padding: 12px 28px;
+    }
+
+    .sonic-intro {
+        top: 260px;
+        margin-left: 100px;
+    }
+
+    .sonic-intro h2 {
+        font-size: 76px;
+    }
+
+    .sonic-intro p {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .moviedetails {
+        margin-top: 20px;
+    }
+
+    .moviedetails span {
+        font-size: 23px;
+    }
+
+    .watch-parent {
+        transform: translate(-5px, 70px);
+    }
+
+    .watch-parent a {
+        font-size: 22px;
+    }
+
+    .movie-catalogue {
+        width: 780px;
+        transform: translate(840px, 75px);
+    }
+
+    .genres-parent {
+        min-height: 440px;
+    }
+
+    .genres1234 {
+        font-size: 42px;
+        transform: translate(80px, 35px);
+    }
+
+    .genres-container {
+        margin-left: 80px;
+    }
+
+    .new-release {
+        min-height: 520px;
+    }
+
+    .new-release-text {
+        font-size: 42px;
+        transform: translate(80px, 35px);
+    }
+
+    .new-release-container {
+        margin-left: 80px;
+        gap: 35px;
+    }
+
+    .new-release-together {
+        width: 280px;
+        height: 340px;
+    }
+
+    .first-child-image,
+    .second-child-image {
+        height: 340px;
+    }
+
+    .new-release-child:hover .new-release-together {
+        width: 560px;
+    }
+
+    .new-release-content {
+        top: 150px;
+    }
+
+    .topmovies-parent {
+        padding: 35px 0 60px;
+    }
+
+    .topmovies-parent h2 {
+        font-size: 42px;
+        padding: 0 80px;
+    }
+
+    .top10-cardboxes {
+        padding: 35px 80px;
+        gap: 40px;
+    }
+
+    .movie-card {
+        width: 280px;
+        height: 340px;
+    }
+
+    .movie-card:hover {
+        width: 520px;
+    }
+
+    .movie-number {
+        font-size: 210px;
+    }
+
+    .movie-info h3 {
+        font-size: 34px;
+    }
+
+    .now-watching-parent {
+        min-height: 620px;
+        padding: 35px 80px 70px;
+    }
+
+    .now-watching-parent > h3:first-of-type {
+        font-size: 42px;
+        margin-left: 0;
+    }
+
+    .now-watching-child {
+        gap: 60px;
+    }
+
+    .now-watching-child > img:first-of-type {
+        width: 45%;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+
+    .spiderman-text {
+        flex: 1;
+    }
+
+    .spiderman-text h3 {
+        font-size: 42px;
+    }
+
+    .spiderman-text p {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .coming-soon-parent {
+        min-height: 650px;
+        padding-top: 50px;
+    }
+
+    .coming-soon-parent h3 {
+        font-size: 42px;
+        margin-left: 80px;
+    }
+
+    .coming-soon-track {
+        padding-left: 80px;
+        gap: 35px;
+    }
+
+    .coming-soon-track img {
+        width: 300px;
+        height: 360px;
+    }
+
+    footer {
+        padding: 70px 80px 80px;
+    }
+
+    .footer-child {
+        max-width: 1400px;
+        column-gap: 80px;
+    }
+
+    .footer-child h3 {
+        font-size: 42px;
+    }
+
+    .footer-child h4 {
+        font-size: 24px;
+    }
+
+    .footer-child p {
+        font-size: 18px;
+    }
+
+    footer hr,
+    footer > p {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .nav-container {
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .search-child {
+        margin-left: auto;
+    }
+
+    .search-child input {
+        width: 210px;
+    }
+
+    .getstarted {
+        margin-left: 0;
+    }
+
+    header {
+        min-height: 850px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sonic-intro {
+        top: 210px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .sonic-intro h2 {
+        font-size: 52px;
+    }
+
+    .sonic-intro p {
+        max-width: 850px;
+    }
+
+    .sonic-intro p br {
+        display: none;
+    }
+
+    .watch-parent {
+        transform: none;
+        margin-top: 30px;
+    }
+
+    .movie-catalogue {
+        transform: none;
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 20px;
+        margin-top: 45px;
+        overflow: visible;
+    }
+
+    .movie-catalogue img {
+        position: static;
+        width: 120px;
+        height: 150px;
+        animation: none;
+    }
+
+    .now-watching-parent {
+        padding-bottom: 50px;
+    }
+
+    .now-watching-child {
+        gap: 25px;
+        padding-right: 30px;
+    }
+
+    .now-watching-child > img:first-of-type {
+        width: 45%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .spiderman-text h3 {
+        font-size: 30px;
+    }
+
+    .spiderman-text p {
+        width: 100%;
+    }
+
+    .footer-child {
+        max-width: 100%;
+        column-gap: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        padding: 15px 20px;
+    }
+
+    nav {
+        gap: 20px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .search-child input {
+        width: 180px;
+    }
+
+    .getstarted a {
+        font-size: 16px;
+    }
+
+    header {
+        min-height: 900px;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .sonic-intro {
+        top: 200px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .sonic-intro h2 {
+        font-size: 44px;
+        text-transform: capitalize;
+    }
+
+    .sonic-intro p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .moviedetails {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .moviedetails img {
+        width: 25px;
+        height: 25px;
+        margin-left: 12px;
+    }
+
+    .moviedetails span {
+        font-size: 17px;
+    }
+
+    .watch-parent a {
+        font-size: 16px;
+    }
+
+    .movie-catalogue {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .movie-catalogue img {
+        width: 100px;
+        height: 125px;
+    }
+
+    .genres1234,
+    .new-release-text,
+    .topmovies-parent h2,
+    .now-watching-parent > h3:first-of-type,
+    .coming-soon-parent h3 {
+        font-size: 30px;
+    }
+
+    .genres-subcontainer,
+    .genres-subcontainer2,
+    .genres-subcontainer3,
+    .genres-subcontainer4 {
+        width: 300px;
+        min-width: 300px;
+        height: 235px;
+    }
+
+    .genres-child,
+    .genres-child2,
+    .genres-child3,
+    .genres-child4 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .genres-container {
+        height: 285px;
+    }
+
+    .genres-parent {
+        min-height: 340px;
+    }
+
+    .genres-track {
+        animation: cardsTablet 20s ease-in-out infinite;
+    }
+
+    @keyframes cardsTablet {
+        0%, 20% { transform: translateX(0); }
+        25%, 45% { transform: translateX(-320px); }
+        50%, 70% { transform: translateX(-640px); }
+        75%, 95% { transform: translateX(-960px); }
+        100% { transform: translateX(-1280px); }
+    }
+
+    .genres-subcontainer span,
+    .genres-subcontainer2 span,
+    .genres-subcontainer3 span,
+    .genres-subcontainer4 span {
+        font-size: 25px;
+    }
+
+    .genre1,
+    .genre2,
+    .genre3,
+    .genre4 {
+        max-width: 75%;
+    }
+
+    .new-release-container {
+        margin-left: 20px;
+        gap: 18px;
+    }
+
+    .new-release-text {
+        transform: translate(20px, 25px);
+    }
+
+    .new-release-together,
+    .new-release-child:hover .new-release-together {
+        width: 350px;
+        height: 280px;
+    }
+
+    .first-child-image,
+    .second-child-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-release-content {
+        top: auto;
+        bottom: 18px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .new-release-content > p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+
+    .icons-medea {
+        gap: 12px;
+    }
+
+    .icons-medea span {
+        font-size: 14px;
+    }
+
+    .icons-medea span img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .topmovies-parent h2 {
+        padding: 0 20px;
+    }
+
+    .top10-cardboxes {
+        padding: 25px 20px;
+        gap: 20px;
+    }
+
+    .movie-number {
+        font-size: 140px;
+        min-width: 65px;
+    }
+
+    .movie-card {
+        width: 240px;
+        height: 290px;
+    }
+
+    .movie-card:hover {
+        width: 380px;
+    }
+
+    .movie-info {
+        width: 100%;
+    }
+
+    .movie-info h3 {
+        font-size: 25px;
+    }
+
+    .movie-meta {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .now-watching-child {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .now-watching-child > img:first-of-type {
+        width: 100%;
+        max-height: 350px;
+        margin: 0;
+    }
+
+    .now-watching-parent > h3:first-of-type {
+        margin-left: 20px;
+    }
+
+    .spiderman-text h3 {
+        font-size: 28px;
+    }
+
+    .spiderman-text > a {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .coming-soon-parent {
+        min-height: 480px;
+    }
+
+    .coming-soon-parent h3 {
+        margin-left: 20px;
+    }
+
+    .coming-soon-track img {
+        width: 200px;
+        height: 270px;
+    }
+
+    footer {
+        padding: 40px 25px;
+    }
+
+    .footer-child {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 35px;
+    }
+
+    .footer-child p br {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav-container {
+        padding: 12px 15px;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 80px;
+        height: auto;
+        order: 1;
+    }
+
+    .getstarted {
+        order: 2;
+        margin-left: auto;
+        padding: 7px 15px;
+    }
+
+    .getstarted a {
+        font-size: 14px;
+    }
+
+    .search-child {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-child input {
+        width: 100%;
+        padding: 10px 40px 10px 15px;
+    }
+
+    nav {
+        order: 4;
+        width: 100%;
+        gap: 20px;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    header {
+        min-height: 1050px;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .sonic-intro {
+        top: 205px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .sonic-intro h2 {
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .sonic-intro p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .moviedetails {
+        transform: none;
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .moviedetails img {
+        width: 22px;
+        height: 22px;
+        margin-left: 8px;
+    }
+
+    .moviedetails span {
+        font-size: 15px;
+    }
+
+    .watch-parent {
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .watch-parent a {
+        font-size: 14px;
+    }
+
+    .watch-parent span:nth-child(1),
+    .watch-parent span:nth-child(2) {
+        padding: 7px 10px;
+    }
+
+    .movie-catalogue {
+        margin-top: 35px;
+        gap: 10px;
+    }
+
+    .movie-catalogue img {
+        width: calc(25% - 8px);
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .genres1234,
+    .new-release-text,
+    .topmovies-parent h2,
+    .now-watching-parent > h3:first-of-type,
+    .coming-soon-parent h3 {
+        font-size: 27px;
+    }
+
+    .genres1234 {
+        transform: translate(15px, 25px);
+    }
+
+    .genres-container {
+        margin-left: 10px;
+        padding-top: 45px;
+        height: 270px;
+    }
+
+    .genres-parent {
+        min-height: 320px;
+    }
+
+    .genres-subcontainer,
+    .genres-subcontainer2,
+    .genres-subcontainer3,
+    .genres-subcontainer4 {
+        width: 280px;
+        min-width: 280px;
+        height: 218px;
+    }
+
+    .genres-track {
+        animation: cardsMobile 20s ease-in-out infinite;
+    }
+
+    @keyframes cardsMobile {
+        0%, 20% { transform: translateX(0); }
+        25%, 45% { transform: translateX(-300px); }
+        50%, 70% { transform: translateX(-600px); }
+        75%, 95% { transform: translateX(-900px); }
+        100% { transform: translateX(-1200px); }
+    }
+
+    .new-release {
+        min-height: 390px;
+    }
+
+    .new-release-container {
+        margin: 50px 0 0;
+        padding: 0 15px 20px;
+        gap: 15px;
+    }
+
+    .new-release-text {
+        transform: translate(15px, 25px);
+    }
+
+    .new-release-together,
+    .new-release-child:hover .new-release-together {
+        width: min(85vw, 350px);
+        height: 270px;
+    }
+
+    .first-child-image {
+        opacity: 0;
+    }
+
+    .second-child-image,
+    .new-release-child:hover .second-child-image {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .new-release-together::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        background: linear-gradient(
+            transparent 20%,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+        pointer-events: none;
+    }
+
+    .new-release-content {
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .new-release-content > p {
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    .icons-medea {
+        gap: 10px;
+    }
+
+    .watch-parent1 {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .watch-parent1 a {
+        min-width: 0;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .topmovies-parent h2 {
+        padding: 0 15px;
+    }
+
+    .top10-cardboxes {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .movie-number {
+        font-size: 100px;
+        min-width: 45px;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .movie-card,
+    .movie-card:hover {
+        width: 255px;
+        height: 280px;
+    }
+
+    .movie-image {
+        opacity: 0;
+    }
+
+    .movie-details {
+        opacity: 1;
+        pointer-events: auto;
+        padding: 15px 12px 20px;
+    }
+
+    .movie-hover-image {
+        transform: scale(1);
+    }
+
+    .movie-info {
+        width: 100%;
+        transform: none;
+    }
+
+    .movie-info h3 {
+        font-size: 23px;
+        white-space: normal;
+    }
+
+    .movie-meta {
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .movie-meta img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .now-watching-parent {
+        padding-bottom: 40px;
+    }
+
+    .now-watching-child {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .now-watching-parent > h3:first-of-type {
+        margin: 0 0 25px 15px;
+    }
+
+    .spiderman-text h3 {
+        font-size: 25px;
+    }
+
+    .spiderman-text p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .spiderman-text a > span {
+        font-size: 15px;
+    }
+
+    .spiderman-text > a {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .coming-soon-parent {
+        min-height: 400px;
+        padding-top: 25px;
+    }
+
+    .coming-soon-parent h3 {
+        margin: 0 0 25px 15px;
+    }
+
+    .coming-soon-track {
+        padding-left: 15px;
+        gap: 15px;
+    }
+
+    .coming-soon-track img {
+        width: 160px;
+        height: 220px;
+        border-radius: 12px;
+    }
+
+    footer {
+        padding: 35px 15px;
+    }
+
+    .footer-child {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .footer-child > div:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-child h3 {
+        font-size: 30px;
+    }
+
+    .footer-child h4 {
+        font-size: 18px;
+    }
+
+    .footer-child p {
+        font-size: 14px;
+    }
+}
