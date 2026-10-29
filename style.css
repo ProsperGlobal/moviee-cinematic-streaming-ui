@@ -294,7 +294,6 @@ transform: translateY(5px);
     overflow: hidden;
 }
 
-
 .genres1234 {
 font-weight: 500;
 font-style: Medium;
@@ -396,9 +395,6 @@ transform: translateX(-2514px) scale(1.05);
 .genres-subcontainer4 {
     animation-delay: -12s;
 } 
-
-
-
 
 .genres-subcontainer span {
 font-weight: 500;
@@ -578,7 +574,7 @@ transform: rotate(31.2deg);
 
 .new-release {
   background-color: #0B0B0E;
-  min-height: 700px;
+  min-height: 470px;
   overflow: hidden;
 }
 
@@ -586,7 +582,7 @@ transform: rotate(31.2deg);
   font-weight: 500;
   font-size: 38px;
   color: #fff;
-  transform: translate(40px, 30px);
+  transform: translate(40px, 35px);
   margin-bottom: 5px;
 }
  
@@ -678,36 +674,290 @@ transform: rotate(31.2deg);
     object-fit: contain;
 }
 
+.topmovies-parent {
+  background-color: #0B0A0F;
+  overflow-x: hidden;
+  padding: 20px 0 40px;
+}
+
+.topmovies-parent h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+  padding: 0 40px;
+}
+
+.top10-cardboxes {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 28px 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 40px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.top10-cardboxes::-webkit-scrollbar {
+  display: none;
+}
+
+.top10-cardboxes:has(.movie-card:hover) {
+  scroll-snap-type: x proximity;
+}
+
+.top10-cardboxes-child,
+.top10-cardboxes-child1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.movie-number {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 1;
+  min-width: 90px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px #FFF8EA;
+  position: relative;
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+}
+
+.movie-glow {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.movie-card {
+  position: relative;
+  width: 262px;
+  height: 312px;
+  margin-left: -8px; 
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 3;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: width 0.45s ease-in-out, transform 0.45s ease-in-out, box-shadow 0.45s ease-in-out;
+}
+
+.movie-card:hover {
+  width: 508px;
+  z-index: 5;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+}
+
+.movie-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.45s ease-in-out, transform 0.45s ease-in-out;
+}
+
+.movie-card:hover .movie-image {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.movie-details {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 16px 32px;
+  color: #FFFFFF;
+  font-family: "Oswald", sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease-in-out;
+}
+
+.movie-details::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.28) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.movie-card:hover .movie-details {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.movie-hover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transform: scale(1.08);
+  transition: transform 0.45s ease-in-out;
+}
+
+.movie-card:hover .movie-hover-image {
+  transform: scale(1);
+}
+
+.movie-info {
+  position: relative;
+  z-index: 2;
+  width: 476px;
+  transform: translateY(8px);
+  transition: transform 0.45s ease-in-out;
+}
+
+.movie-card:hover .movie-info {
+  transform: translateY(0);
+}
+
+.movie-info h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  white-space: nowrap;
+}
+
+.movie-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.movie-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.movie-meta img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
 
 .watch-parent1 {
-display: flex;
-transform: translate(-5px, 20px);
-gap: 15px;
-}
-
-.watch-parent1 span:nth-child(1) {
-    background-color: #FFB628;
-    padding: 4px 7px;
-    border-radius: 20px;
-}
-
-.watch-parent1 span:nth-child(2) {
-    background-color: transparent;
-    border: 1px solid #FFF8EA;
-    border-radius: 20px;
-    padding: 4px 7px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 22px;
 }
 
 .watch-parent1 a {
-text-decoration: none;
-font-weight: 400;
-font-style: Regular;
-font-size: 15px;
-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 120px;
+  padding: 5px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  white-space: nowrap;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.watch-parent1 span > a > img {
-transform: translateY(6px);
+.watch-parent1 .btn-watch {
+  background-color: #FFB628;
+  border: 1px solid #FFB628;
+}
+
+.watch-parent1 .btn-trailer {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid #FFF8EA;
+}
+
+.watch-parent1 a:hover {
+  transform: scale(1.04);
+}
+
+.now-watching-parent {
+background-color: #0A0B0F;
+min-height: 300px;
+width: 100%;
+}
+
+.now-watching-child {
+    display: flex;
+gap: 45px;
+}
+
+.now-watching-parent > h3:first-of-type {
+    font-family: Oswald;
+font-weight: 500;
+font-style: Medium;
+font-size: 38px;
+color: white;
+margin: 0px 0px 40px 40px;
+}
+
+.now-watching-child > img:first-of-type {
+    margin: 0px 0px 0px 40px;
+}
+
+
+.spiderman-text h3 {
+font-family: Oswald;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 36px;
+color: white;
+margin-bottom: 10px;
+}
+
+.spiderman-text p {
+font-family: 'Oswald', sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+color: white;
+margin-bottom: 10px;
+width: 92%;
+}
+
+.spiderman-text a {
+text-decoration: none;
+}
+
+.spiderman-text span {
+color: white;
+font-family: 'Oswald', sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
 }
 
 
